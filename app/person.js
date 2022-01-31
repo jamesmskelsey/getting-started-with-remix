@@ -17,4 +17,9 @@ export function getPeople() {
       name: "Mei Kelsey",
     },
   ];
-};
+}
+
+export function createPerson(person) {
+  console.log(person);
+  return person;
+}

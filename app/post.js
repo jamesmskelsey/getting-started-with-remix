@@ -1,3 +1,4 @@
+// This is like the 'model' from rails applications
 import path from "path";
 import fs from "fs/promises";
 import parseFrontMatter from "front-matter";
@@ -27,4 +28,13 @@ export async function getPost(slug) {
 
   const html = marked(body);
   return { slug, html, title: attributes.title };
+}
+
+export async function createPost(post) {
+  const md = `---\ntitle: ${post.title}\n---\n\n${post.markdown}`;
+  await fs.writeFile(
+    path.join(postsPath, post.slug + ".md"),
+    md
+  );
+  return getPost(post.slug);
 }
