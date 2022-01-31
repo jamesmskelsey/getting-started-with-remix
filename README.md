@@ -1,6 +1,15 @@
-# Welcome to Remix!
+# What This Is
 
-- [Remix Docs](https://remix.run/docs)
+I learn best by doing and playing. I create "kitchen sink" apps when I am learning something new. They usually start
+with the "getting started" page, and then I add my own thing, and play with it. And then throw in something else to see what
+happens. They never go very far, but I learn a ton.
+
+In this example, I'm following along with the remix getting-started project and after each section adding my own section.
+
+They're having me build up the ability to view and add posts, and I'm following along by viewing and adding people.
+
+Maybe I'll tie it in to firebase... because that'd be neat. And then maybe I'll deploy it. And then I'll probably get bored
+and do something with maps and this remix thing... because man that sounds awesome.
 
 ## Development
 
