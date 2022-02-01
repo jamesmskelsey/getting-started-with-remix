@@ -1,5 +1,4 @@
 import {
-  Link,
   Links,
   LiveReload,
   Meta,
@@ -7,6 +6,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from "remix";
+import NavBar from "./components/navbar";
+import styles from "./styles/app.css";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 
 export function meta() {
   return { title: "New Remix App" };
@@ -22,8 +27,8 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Link to="/admin">Admin</Link> | <Link to="/posts">Posts</Link> |{" "}
-        <Link to="/people">People</Link>
+        <NavBar />
+
         <Outlet />
         <ScrollRestoration />
         <Scripts />
